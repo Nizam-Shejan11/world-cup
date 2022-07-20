@@ -1,25 +1,32 @@
 /* common styles or utlities  */
 body {
   background-color: #fff;
+  margin: 0px;
+  padding: 0px;
 }
 
 /* banner style  */
 .banner {
   display: flex;
-  width: 80%;
-  margin-left: 10%;
+  width: 90%;
+  margin-left: 5%;
   background: #161616;
   border-radius: 30px;
+  margin-bottom: 100px;
 }
 .banner-text {
   color: #fff;
-  width: 100%;
-  margin-top: 20px;
-  margin-left: 60px;
+  width: 50%;
+  padding-top: 30px;
+  padding-left: 70px;
+}
+.banner-img {
+  width: 50%;
 }
 .banner-text p {
   font-size: 16px;
 }
+
 .link-button {
   color: #fff;
   text-decoration: none;
@@ -28,83 +35,86 @@ body {
   margin-top: 5px;
   border-radius: 5px;
 }
-.banner-img {
-  width: 100%;
-  height: 100%;
-}
 
-/* Login form style  */
-.login-container {
+.container {
   display: flex;
-  justify-content: center;
-  width: 20%;
-  margin-top: 40px;
-  background-color: #000;
-  border-radius: 10px;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 100px;
 }
-.login-form {
+/* Link style  */
+.link-btn {
+  width: 240px;
+  height: 230px;
   display: flex;
   flex-direction: column;
-  width: 90%;
-  margin: 2.5%;
+  background: #161616;
+  border-radius: 10px;
+  padding: 10px 15px;
 }
-.login-form input {
-  margin-top: 1em;
-  font-size: 1.5em;
-  padding: 5px 10px;
+.link-btn > a {
+  padding: 15px 15px;
 }
-.login-form input[type="submit"] {
-  background-color: #dd0000;
-  border: 0px;
-  border-radius: 5px;
-  color: whitesmoke;
-  font-weight: 600;
+.link1 {
+  color: #000;
+  background-color: #fff;
+  margin: 13px 5px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+}
+.link3 {
+  color: #000;
+  background-color: rgb(209, 17, 17);
+  margin: 13px 5px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
 }
 
 /* blogs styles  */
-.section {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
 .blogs-container {
-  width: 45%;
-  margin-left: 30%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-left: 15px;
 }
 .blogs {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  width: 270px;
+  height: 342px;
+
+  border: 1px solid #808080;
+  border-radius: 10px;
 }
-.blog .blog-banner img {
-  width: 312px;
-  height: 175px;
-  border-radius: 10px 10px 0px 0px;
+.blog-thumbnil img {
+  width: 270px;
 }
-.blog-text {
-  padding: 15px;
+.button {
+  margin-top: 10px;
 }
-.blog-link-button a {
-  text-decoration: none;
-  background-color: #b9b9b9;
-  border: 1px solid black;
-  border-radius: 5px;
-}
-.blog-heading {
+.title {
   font-size: 18px;
+}
+.blog-content {
+  padding-left: 20px;
 }
 .blog-icon {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+.time,
+.chat {
+  display: flex;
+  align-items: center;
+}
+.time img,
+.chat img {
+  height: 24px;
+  width: 24px;
 }
 
-.time-icon img .chat-icon img {
-  width: 24px;
-  height: 24px;
-}
 /* footer styles  */
 .foot {
   background-color: #000;
@@ -118,6 +128,7 @@ body {
 }
 hr {
   border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 90%;
 }
 .foot-p {
   display: flex;
