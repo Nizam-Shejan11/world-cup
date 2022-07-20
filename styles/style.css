@@ -145,6 +145,7 @@ hr {
   .banner {
     display: flex;
     flex-direction: column;
+    width: 100%;
   }
   .banner-text,
   .banner-img {
@@ -171,6 +172,7 @@ hr {
     grid-template-columns: repeat(1, 1fr);
   }
   .foot {
+    width: 100%;
     height: 500px;
   }
   .foot-p {
